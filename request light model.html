@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <title>Response form</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1.5fr 2.5fr;
+            background: url("pexels-photo-3881110.jpeg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-size: cover;
+        }
+
+        .box {
+            margin: 0px;
+            padding: 5px;
+            margin: auto;
+            height: 100%;
+        }
+
+        .heading {
+            font-family: 'Merriweather', serif;
+            text-align: center;
+            text-decoration: underline;
+            margin-top: 34px;
+            font-size: 2em;
+        }
+
+        #image {
+            margin: 0px 2px;
+            text-align: center;
+        }
+
+        a :hover {
+            opacity: 0.6;
+            border: black;
+
+        }
+
+        .im {
+            height: 50px;
+            width: 50px;
+            margin: 15px;
+        }
+
+        li {
+            font-size: 1.5em;
+            line-height: 1em;
+            margin: 15px;
+            padding: 5px;
+        }
+
+        .instruction {
+            margin: 0px;
+            padding: 2em;
+            width: 30vw;
+
+        }
+
+        .num {
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        .forum {
+            margin-top: 34px;
+
+        }
+
+        #box2 {
+            opacity: 0.7;
+            border-radius: 4px;
+            margin-right: 1.5em;
+        }
+
+        label {
+            font-size: 1.5em;
+            display: inline-block;
+            padding:12px 12px 12px 0;
+        }
+
+        input[type=text],select,textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid rgb(17, 17, 17);
+            border-radius: 4px;
+            resize: vertical;
+            font-size: 1.3em;
+        }
+        #btn{
+            
+            background-color: rgb(83, 24, 138);
+            border-radius: 15px;
+            margin: 14px 0px;
+            padding :10px 60px;
+            font-size: 1.4em;
+            font-weight: bold;
+        }
+        button:hover{
+            opacity: 0.8;
+            box-shadow: rgb(41, 35, 35) 3px 3px 3px;
+        }
+        @media screen and (max-width:800px){
+            .container{
+                grid-template-columns: 1fr;
+                background:rgb(241, 241, 133);
+                margin: 2px ;
+            }
+            #box1{
+                margin: auto;
+                padding:0px;
+                order: 2;
+                align-items: center;
+            }
+            .instruction{
+                padding: 0em;
+                margin:1px;
+            }
+            li{
+                margin: 1em;
+                padding:0.2em;
+                width: 90vw;
+            }
+            #box1{
+                margin-left: 1em;
+            }
+           p.num{
+                padding-top: 1em;
+            }
+            #box2{
+                margin: 1em;
+            }}
+        @media screen and (maxwidth:400px){
+            *{
+                background-color:rgb(241, 241, 133);
+                background-size: cover;}
+        }    
+        #box2{
+            opacity:1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">
+            <h1 class="heading">How it works</h1>
+            <ul class="instruction">
+                <li class="item">Tell us details of your holiday plan.</li>
+                <li class="item">After you submit the form , one of our travelling expert will talk to you within 48
+                    hours and he/she will
+                    also direct you in planning your tour.</li>
+                <li class="item">Grab the deal and start packaging for an incredible tour of india with SCINTILLA tour
+                    and travels.</li>
+            </ul>
+            <div id="image">
+                <a href="#insta"><img src="insta.jpg" alt="instagram" class="im"></a>
+                <a href="#twitter"> <img src="twitter.png" alt="twitter" class="im"></a>
+                <a href="#facebook"><img src="fb.png" alt="facebook" class="im"></a>
+            </div>
+            <hr>
+            <div id="call">
+                <h2 class="heading">Call us for details</h2>
+                <p class="num">+91-0830000492 or +91-09852344556</p>
+            </div>
+        </div>
+        <div class="box" id="box2">
+            <h1 class="heading">Request Suggestions</h1>
+            <form action="action.php">
+                <div class="forum">
+                    <label for="fname">Full name:</label>
+                    <input type="text" id="fname" placeholder="Enter your name..">
+                    <label for="state">State:</label>
+                    <select id="select-state" placeholder="Choose a state">
+                        <option value="">
+                            <p class="item">Select a state..</p>
+                        </option>
+                        <option value="ap">
+                            <p class="item">Andhra Pradesh</p>
+                        </option>
+                        <option value="arp">
+                            <p class="item">Arunachal Pradesh</p>
+                        </option>
+                        <option value="ass">
+                            <p class="item">Assam</p>
+                        </option>
+                        <option value="bihar">
+                            <p class="item">Bihar</p>
+                        </option>
+                        <option value="cha">
+                            <p class="item">Chattisgarh</p>
+                        </option>
+                        <option value="goa">
+                            <p class="item">Goa</p>
+                        </option>
+                        <option value="gujarat">
+                            <p class="item">Gujarat</p>
+                        </option>
+                        <option value="har">
+                            <p class="item">Haryana</p>
+                        </option>
+                        <option value="hp">
+                            <p class="item">Himachal Pradesh</p>
+                        </option>
+                        <option value="jhar">
+                            <p class="item">Jharkhand</p>
+                        </option>
+                        <option value="kar">
+                            <p class="item">Karnataka</p>
+                        </option>
+                        <option value="ker">
+                            <p class="item">Kerala</p>
+                        </option>
+                        <option value="mp">
+                            <p class="item">Madhya Pradesh</p>
+                        </option>
+                        <option value="mah">
+                            <p class="item">Maharashtra</p>
+                        </option>
+                        <option value="mani">
+                            <p class="item">Manipur</p>
+                        </option>
+                        <option value="megh">
+                            <p class="item">Meghalaya</p>
+                        </option>
+                        <option value="mizo">
+                            <p class="item">Mizoram</p>
+                        </option>
+                        <option value="naga">
+                            <p class="item">Nagaland</p>
+                        </option>
+                        <option value="odi">
+                            <p class="item">Odisha</p>
+                        </option>
+                        <option value="pun">
+                            <p class="item">Punjab</p>
+                        </option>
+                        <option value="raj">
+                            <p class="item">Rajasthan</p>
+                        </option>
+                        <option value="sikk">
+                            <p class="item">Sikkim</p>
+                        </option>
+                        <option value="tn">
+                            <p class="item">Tamil Nadu</p>
+                        </option>
+                        <option value="tel">
+                            <p class="item">Telangana</p>
+                        </option>
+                        <option value="tri">
+                            <p class="item">Tripura</p>
+                        </option>
+                        <option value="up">
+                            <p class="item">Uttar Pradesh</p>
+                        </option>
+                        <option value="uttar">
+                            <p class="item">Uttarakhand</p>
+                        </option>
+                        <option value="wb">
+                            <p class="item">West Bengal</p>
+                        </option>
+                    </select><br>
+                    <label for="email">Email ID:</label>
+                    <input type="text" id="email" placeholder="Enter your email.." style="display: inline;">
+                    <label for="tra_date">Travel date:</label>
+                    <input type="date" name="" id="tra_date">
+                    <label for="dur_stay" style="margin-left: 25px;">Duration of the stay:</label>
+                    <input type="text" name="" id="dur_stay" style="display: inline;width: 60px;height: 1.5em;">
+                    <label for="no_person">No of persons:</label>
+                    <input type="text" name="" id="no_person" style="display: inline;width: 60px;height: 1.5em;">
+                    <label for="con_no" style="margin-left: 20px;">Contact No.:</label>
+                    <input type="text" name="" id="con_no" style="display: inline;width: 20vw;">
+                    <label for="tour_des" style="display: block;">Tour description:</label>
+                    <textarea id="tour_des" placeholder="Enter details of your tour here.." style="height:100px;"></textarea>
+                    <button id="btn">Submit</button>
+                </div>
+            </form>
+        </div>
+
+</html>
+</div>
+</body>
+
+</html>
