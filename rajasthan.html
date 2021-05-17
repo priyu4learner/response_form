@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f4c7d5c7f4.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .heading {
+            height: 7vw;
+            background: url("mountains-6231396__340.jpg") no-repeat;
+            background-size: cover;
+            background-position-y: -190px;
+            opacity: 0.9;
+
+        }
+
+        .data {
+            color: #ec0a0a;
+            font-weight: bolder;
+            line-height: 1.6em;
+            margin-left: 74px;
+            margin-top: 0px;
+        }
+
+        .container {
+            display: flex;
+            flex-flow: column;
+            padding: 2px 2px;
+            margin: 2px 2px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .root {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 1fr 1.3fr;
+            margin: 3em;
+        }
+
+        .forum {
+            display: flex;
+            background-color: blanchedalmond;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 20px;
+
+        }
+
+        .content {
+            display: flexbox;
+            background-color: chartreuse;
+            align-items: center;
+            justify-content: center;
+            padding: 41px 60px;
+        }
+
+        .clic {
+            display: flex;
+
+            height: 4em;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .des {
+            position: relative;
+            height: 32em;
+        }
+
+        #description1 {
+            display: block;
+            padding: 20px;
+        }
+
+        #description2 {
+            display: none;
+        }
+
+        #description3 {
+            display: none;
+        }
+
+        .btn {
+            width: 20vw;
+            height: 4em;
+        }
+
+        .contact {
+            display: flex;
+            flex-flow: column;
+            padding: 10px 10px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .side {
+            width: 35vh;
+            ;
+            height: 40vh;
+        }
+
+        label,
+        input,
+        select {
+            margin: 3px 0px;
+        }
+
+        text {
+            resize: vertical;
+        }
+
+        .des {
+            font-size: 1.2em;
+            line-height: 1.2em;
+        }
+
+        h1 {
+            padding-bottom: 20px;
+            text-decoration: underline;
+        }
+
+        h3,
+        section {
+            padding-bottom: 10px;
+        }
+
+        .review {
+            width: 5em;
+            height: 3em;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="heading"><a href=""><i class="fas fa-arrow-circle-left" style="font-size: 40px;"></i></a>
+        <div class="data">Home > Tour <br>
+            <h2 style="text-decoration: underline;">Tour Details</h2>
+        </div>
+        <div class="root">
+            <div class="container">
+                <h2 style="margin-bottom:30px;">Discover Rajasthan</h2>
+                <iframe src="rajasthan.webm" title="Hawa Mahal " style="height: 70vh;width: 130vh;"></iframe>
+            </div>
+
+            <div class="forum">
+                <h2 style="margin-bottom: 30px;"> Book your tour</h2>
+                <div class="book">
+                    <form action="">
+                        <label for="fname" class="labe">First Name:</label>
+                        <input type="text" class="tex" placeholder="Enter first name..">
+                        <label for="lastname" class="labe">Last Name:</label>
+                        <input type="text" class="tex" placeholder="Enter last name..">
+                        <label for="contact" class="labe">ContactNo:</label>
+                        <input type="text" class="tex" placeholder="Enter contact no.">
+                        <label for="tdate" class="labe">Travel Date:</label>
+                        <input type="date" class="tex">
+                        <label for="dur" class="labe">Duration of tour</label>
+                        <select name="" id="number">
+                            <option value="">Select no.of days..</option>
+                            <option value=""> 5 days</option>
+                            <option value=""> 10 days</option>
+                            <option value=""> 15 days</option>
+                        </select>
+                        <label for="mod_trans" class="labe">Mode of transport:</label>
+                        <select name="" id="transport">
+                            <option value="">Select mode of transport..</option>
+                            <option value=""> Aeroplane</option>
+                            <option value=""> Train</option>
+                            <option value=""> Bus</option>
+                        </select>
+                        <br><label for="descript" class="labe">Any special remark..</label>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Enter text here..."></textarea>
+                        <button type="submit"> Submit</button>
+                    </form>
+                    <div class="thank">Thanks for choosing our tour</div>
+                </div>
+
+            </div>
+            <div class="content">
+                <div class="clic">
+                    <div> <button class="btn" id="btn1">Description</button></div>
+                    <div><button class="btn" id="btn2">Location</button></div>
+                    <div><button class="btn" id="btn3">Reviews</button></div>
+                </div>
+                <div class="des" id="description1">
+                    <h1>Product Description</h1>
+                    <section> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore vitae id dicta! Sapiente,
+                        sit,
+                        excepturi placeat sed labore qui vero in dolorem eveniet maxime optio ut neque, voluptatum
+                        temporibus vel.</section>
+                    <section> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore vitae id dicta! Sapiente,
+                        sit,
+                        excepturi placeat sed labore qui vero in dolorem eveniet maxime optio ut neque, voluptatum
+                        temporibus vel.</section>
+                    <hr>
+                    <h3>DEPARTURE/RETURN LOCATION</h3>
+                    Jaipur,Rajasthan.
+                    <hr>
+                    <h3>DEPARTURE TIME</h3>
+                    Please arrive atleast two hours before scheduled time.
+                    <hr>
+                    <h3>INCLUDED</h3>
+                    Accomodation, professional guide ,lockroom.
+                    <hr>
+                    <section> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore vitae id dicta! Sapiente,
+                        sit,
+                        excepturi placeat sed labore qui vero in dolorem eveniet maxime optio ut neque, voluptatum
+                        temporibus vel.</section>
+                    <section> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore vitae id dicta! Sapiente,
+                        sit,
+                        excepturi placeat sed labore qui vero in dolorem eveniet maxime optio ut neque, voluptatum
+                        temporibus vel.</section>
+                    <section> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore vitae id dicta! Sapiente,
+                        sit,
+                        excepturi placeat sed labore qui vero in dolorem eveniet maxime optio ut neque, voluptatum
+                        temporibus vel.</section>
+                    <section> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore vitae id dicta! Sapiente,
+                        sit,
+                        excepturi placeat sed labore qui vero in dolorem eveniet maxime optio ut neque, voluptatum
+                        temporibus vel.</section>
+                    <hr>
+                </div>
+                <div class="des" id="description2">
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe width="800" height="600" id="gmap_canvas"
+                                src="https://maps.google.com/maps?q=rajasthan&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                                href="https://www.online-timer.net"></a><br>
+                            <style>
+                                .mapouter {
+                                    position: relative;
+                                    text-align: right;
+                                    height: 600px;
+                                    width: 800px;
+                                }
+                            </style><a href="https://www.embedgooglemap.net">adding a google map to a website</a>
+                            <style>
+                                .gmap_canvas {
+                                    overflow: hidden;
+                                    background: none !important;
+                                    height: 600px;
+                                    width: 800px;
+                                }
+                            </style>
+                        </div>
+                    </div>
+                </div>
+                <div class="des" id="description3">
+                    <img src="person.webp" alt="" class="review">
+                    <section>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio assumenda laboriosam animi
+                        voluptatibus, qui tempore ex atque, praesentium accusamus cum corporis ea itaque. Dolor non illo
+                        consequuntur blanditiis vitae distinctio?</section>
+                    <img src="person2.webp" alt="" class="review">
+                    <section>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam in nemo atque quasi
+                        nostrum dolores, quam excepturi laudantium, porro quia voluptatem nisi! Enim quas id nostrum
+                        quasi iste sit ab.</section>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Enter your review here..."></textarea>
+                </div>
+            </div>
+            <div class="contact">
+                <h2>OR</h2>
+                <h2>Contact us:</h2>
+                <h2>+91-41556874566225</h2>
+                <img src="raj2.jpg" alt="" class="side">
+                <img src="raj4.jpeg" alt="" class="side">
+            </div>
+        </div>
+        <footer class="foot">
+            <div style="margin: 5px;"> <i> CopyRight©2020</i>, Scintilla tour and travels. This is just a fake website
+                for <b>DEV-JAM 2021</b>.</div>
+            <hr>
+            <i class="fab fa-apple" style="font-size: 4em;margin: 12px;"></i><i class="fab fa-amazon"
+                style="font-size: 4em;margin: 12px;"></i>
+            <i class="fas fa-taxi" style="font-size: 4em;margin: 12px;"></i><i class="fab fa-google-pay"
+                style="font-size: 4em;margin: 12px;"></i>
+            <i class="fab fa-cc-paypal" style="font-size: 4em;margin: 12px;"></i>
+            <hr>
+
+        </footer>
+        <script>
+        function show1() {
+            let btn1 = document.getElementById("btn1")
+                let description1 = document.getElementById("description1");
+                let description2 = document.getElementById("description2");
+                let description3 = document.getElementById("description3");
+                description1.style.diplay = "block";
+                description2.style.diplay = "none";
+                description3.style.diplay = "none";
+            }
+            function show2() {
+                let btn2 = document.getElementById("btn2");
+                let description1 = document.getElementById("description1");
+                let description2 = document.getElementById("description2");
+                let description3 = document.getElementById("description3");
+                description1.style.diplay = "none";
+                description2.style.diplay = "block";
+                description3.style.diplay = "none";
+            }
+            function show3() {
+                let btn3 = document.getElementById("btn3");
+                let description1 = document.getElementById("description1");
+                let description2 = document.getElementById("description2");
+                let description3 = document.getElementById("description3");
+                description1.style.diplay = "none";
+                description2.style.diplay = "none";
+                description3.style.diplay = "block";
+            }  
+        </script>
+    </header>
+</body>
+
+</html>
