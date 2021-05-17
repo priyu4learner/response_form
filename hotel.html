@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/arrow-circle-left?style=solid">
+    <script src="https://kit.fontawesome.com/f4c7d5c7f4.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .heading {
+            height: 7vw;
+            background: url("fog-3776796__340.jpg") no-repeat;
+            background-size: cover;
+            background-position-y: -500px;
+        }
+
+        .container {
+            width: 85vw;
+            margin: auto;
+            height: 80vw;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+
+        }
+
+        footer {
+            height: 8vw;
+            background:url("footer2.webp") no-repeat;
+            background-size: cover;
+            background-position-y: -200px;
+            margin-bottom: 0px 0px;
+            position: relative;
+
+        }
+
+        .data {
+            color: white;
+            font-weight: bolder;
+            line-height: 1.6em;
+            margin-left: 74px;
+            margin-top: 0px;
+        }
+
+        .item {
+
+            margin: 6px 3px;
+            align-items: center;
+            padding-left: 3px;
+            padding-right: 3px;
+            border-radius: 10px;
+            
+        }
+        .item :hover{
+           
+            opacity: 0.7;
+            border:2px solid black;
+            
+        }
+
+        .image {
+            height: 15vw;
+            width: 20vw;
+            align-items: centres;
+        }
+
+        a>img {
+            height: 25vh;
+            width: 43vh;
+        }
+
+        .desc {
+            background: yellow;
+            font-size: 1em;
+        }
+
+        a {
+            text-decoration: none;
+        }
+        a ::-ms-expand{
+            color: rgb(24, 2, 39);
+        }
+        
+        @media screen and (max-width:1200px){
+            .container{
+                   grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+            }
+            footer{
+                margin-top: 100%;
+                position: absolute;
+                margin-top: 100%;
+            }
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <header class="heading"><a href=""><i class="fas fa-arrow-circle-left" style="font-size: 40px;"></i></a>
+        <div class="data">Home > Tour <br>
+            <h2 style="text-decoration: underline;" >Tour</h2>
+        </div>
+
+    </header>
+    <div class="container">
+        <div class="item"><a href="rajasthan.html" class="image"> <img src="jaipur.jpg" alt="">
+                <div class="desc">
+                    <h3>Discover Jaipur</h3>3 Days- 4 Nights <br>Welcome to Jaipur.Click here for more information.
+                </div>
+            </a>
+        </div>
+        <div class="item"><a href="#jaipur" class="image"> <img src="delhi.webp" alt="">
+                <div class="desc">
+                    <h3>Discover Delhi</h3>4 Days- 3 Nights <br>Welcome to Delhi.Click here for more information.
+                </div>
+            </a>
+        </div>
+        <div class="item"><a href="#jaipur" class="image"> <img src="kerala.webp" alt="">
+                <div class="desc">
+                    <h3>Discover Kerala</h3>3 Days- 4 Nights <br>Welcome to Kerala.Click here for more information.
+                </div>
+            </a>
+        </div>
+        <div class="item"><a href="#jaipur" class="image"> <img src="jaipur.jpg" alt="">
+                <div class="desc">
+                    <h3>Discover Jaipur</h3>3 Days- 4 Nights <br>Welcome to Jaipur.Click here for more information.
+                </div>
+            </a>
+        </div>
+        <div class="item"><a href="#jaipur" class="image"> <img src="up.webp" alt="">
+                <div class="desc">
+                    <h3>Discover Uttar Pradesh</h3>3 Days- 4 Nights <br>Welcome to Uttar Pradesh.Click here for more information.
+                </div>
+            </a>
+        </div>
+        <div class="item"><a href="#jaipur" class="image"> <img src="bihar.jpg" alt="">
+                <div class="desc">
+                    <h3>Discover Bihar</h3>3 Days- 4 Nights <br>Welcome to Bihar.Click here for more information.
+                </div>
+            </a>
+        </div>
+        <div class="item"><a href="#jaipur" class="image"> <img src="punjab.jpg" alt="">
+                <div class="desc">
+                    <h3>Discover Punjab</h3>3 Days- 4 Nights <br>Welcome to Punjab.Click here for more information.
+                </div>
+            </a>
+        </div>
+        <div class="item"><a href="#jaipur" class="image"> <img src="gujarat.webp" alt="">
+                <div class="desc">
+                    <h3>Discover Gujarat</h3>3 Days- 4 Nights <br>Welcome to Gujarat.Click here for more information.
+                </div>
+            </a>
+        </div>
+        <div class="item"><a href="#jaipur" class="image"> <img src="orissa.webp" alt="">
+                <div class="desc">
+                    <h3>Discover Orissa</h3>3 Days- 4 Nights <br>Welcome to Orissa.Click here for more information.
+                </div>
+            </a>
+        </div>
+        <div class="item"><a href="#jaipur" class="image"> <img src="goa.jpg" alt="">
+                <div class="desc">
+                    <h3>Discover Goa</h3>3 Days- 4 Nights <br>Welcome to Goa.Click here for more information.
+                </div>
+            </a>
+        </div>
+        <div class="item"><a href="#jaipur" class="image"> <img src="andaman.jpg" alt="">
+                <div class="desc">
+                    <h3>Discover Andaman</h3>3 Days- 4 Nights <br>Welcome to JAndamanClick here for more information.
+                </div>
+            </a>
+        </div>
+        <div class="item"><a href="#jaipur" class="image"> <img src="assam.jpg" alt="">
+                <div class="desc">
+                    <h3>Discover Assam</h3>3 Days- 4 Nights <br>Welcome to Assam.Click here for more information.
+                </div>
+            </a>
+        </div>
+        <div class="item"><a href="#jaipur" class="image"> <img src="wb.jpg" alt="">
+                <div class="desc">
+                    <h3>Discover West Bengal</h3>3 Days- 4 Nights <br>Welcome to West Bengal.Click here for more information.
+                </div>
+            </a>
+        </div>
+        <div class="item"><a href="#jaipur" class="image"> <img src="uttarakhand.webp" alt="">
+                <div class="desc">
+                    <h3>Discover Uttarakhand</h3>3 Days- 4 Nights <br>Welcome to Uttarakhand.Click here for more information.
+                </div>
+            </a>
+        </div>
+        <div class="item"><a href="#jaipur" class="image"> <img src="kashmir.jpg" alt="">
+                <div class="desc">
+                    <h3>Discover Kashmir</h3>3 Days- 4 Nights <br>Welcome to Kashmir.Click here for more information.
+                </div>
+            </a>
+        </div>
+        <div class="item"><a href="#jaipur" class="image"> <img src="maharashtra.webp" alt="">
+                <div class="desc">
+                    <h3>Discover Maharashtra</h3>3 Days- 4 Nights <br>Welcome to Maharashtra.Click here for more information.
+                </div>
+            </a>
+        </div>
+    </div>
+    <footer class="foot" >
+<div style="margin: 5px;"> <i> CopyRight©2020</i>, Scintilla tour and travels. This is just a fake website for <b>DEV-JAM 2021</b>.</div><hr>
+<i class="fab fa-apple" style="font-size: 4em;margin: 12px;"></i><i class="fab fa-amazon" style="font-size: 4em;margin: 12px;"></i>
+<i class="fas fa-taxi" style="font-size: 4em;margin: 12px;"></i><i class="fab fa-google-pay" style="font-size: 4em;margin: 12px;"></i>
+<i class="fab fa-cc-paypal" style="font-size: 4em;margin: 12px;"></i><hr>
+
+
+    </footer>
+</body>
+
+</html>
